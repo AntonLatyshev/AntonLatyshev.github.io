@@ -10,7 +10,7 @@ $(document).ready(function () {
     }
   })
 
-  /*Якоря ссылки*/
+  /*Якоря ссылки ANCHOR LINKS*/
   $('a[data-target^="anchor"]').on('click', function () {
     $('a[data-target^="anchor"]').removeClass('active');
     $(this).addClass('active');
@@ -37,7 +37,17 @@ $(document).ready(function () {
     }
   })
 
-  /*top-carousel*/
-  $('.top-carousel-slider').slick();
+  /*top-carousel SLIDER*/
+  $('.top-carousel-slider').slick({
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
 
 })

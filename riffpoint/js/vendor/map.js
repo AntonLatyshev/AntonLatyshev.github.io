@@ -3,7 +3,11 @@ $(document).ready(function () {
       var searchMap = function() {
         var map = $('#contacts-map');
         var markerPosition = new google.maps.LatLng(38.707975, -77.023151);
-        var centerPosition = new google.maps.LatLng(38.707339, -77.009890);
+        if ($(window).width() <= 1023) {
+          var centerPosition = new google.maps.LatLng(38.707975, -77.023151);
+        } else {
+          var centerPosition = new google.maps.LatLng(38.707339, -77.009890);
+        }
         var infowindow = new google.maps.InfoWindow({
           content: data
         });
