@@ -64,6 +64,14 @@
 
 	var _anchor2 = _interopRequireDefault(_anchor);
 
+	var _navMenu = __webpack_require__(7);
+
+	var _navMenu2 = _interopRequireDefault(_navMenu);
+
+	var _validateForm = __webpack_require__(8);
+
+	var _validateForm2 = _interopRequireDefault(_validateForm);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _markupMenu.markupMenu)(window.document);
@@ -74,6 +82,8 @@
 	  (0, _carousel2.default)();
 	  (0, _plansBox2.default)();
 	  (0, _anchor2.default)();
+	  (0, _navMenu2.default)();
+	  (0, _validateForm2.default)();
 	});
 
 /***/ }),
@@ -183,10 +193,36 @@
 	});
 	var carousel = function carousel() {
 
-	  $('.main-carousel').slick();
+	  $('.main-carousel').slick({
+	    responsive: [{
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        dots: true
+	      }
+	    }]
+	  });
 
 	  $('.team__list').slick({
-	    slidesToShow: 4
+	    slidesToShow: 4,
+	    responsive: [{
+	      breakpoint: 1155,
+	      settings: {
+	        slidesToShow: 3
+	      }
+	    }, {
+	      breakpoint: 932,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    }, {
+	      breakpoint: 650,
+	      settings: {
+	        slidesToShow: 1,
+	        arrows: false,
+	        dots: true
+	      }
+	    }]
 	  });
 	};
 	exports.default = carousel;
@@ -234,6 +270,50 @@
 	  });
 	};
 	exports.default = anchor;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var navMenu = function navMenu() {
+
+	  $('#hamburger').on('click', function () {
+	    $(this).toggleClass('active');
+	    $('.header__nav').toggleClass('mobile');
+	  });
+	};
+	exports.default = navMenu;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var validateForm = function validateForm() {
+
+	  $('.contact__form').validate({
+	    rules: {
+	      name: {
+	        required: true,
+	        minlength: 2
+	      },
+	      email: {
+	        required: true,
+	        email: true
+	      }
+	    }
+	  });
+	};
+	exports.default = validateForm;
 
 /***/ })
 /******/ ]);

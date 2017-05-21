@@ -20,6 +20,13 @@
           <a href="/" class="header__logo">
             <img class="header__logo-img" src="images/header_logo.png" alt="logo" title="logo" width="120" height="37">
           </a>
+          <div class="hamburger" id="hamburger">
+            <div class="hamburger__holder">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </div>
+          </div>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item active"><a href="#wrapper" data-target="anchor" class="header__link">Home</a>
@@ -178,11 +185,25 @@
           </div>
         </div>
 
-        <div id="contact" class="contact" style="background-image: url('/author/data/contact_bg.jpg')">
+        <div id="contact" class="contact" style="background-image: url('/data/contact_bg.jpg')">
           <div class="contact__overlay"></div>
           <div class="contact__holder">
             <div class="contact__title">Contact us</div>
             <div class="contact__block">
+              <form action="#" method="post" name="contact-form" class="contact__form">
+                <div class="contact__row">
+                  <div class="contact__field">
+                    <input type="text" name="name" placeholder="Name">
+                  </div>
+                  <div class="contact__field">
+                    <input type="email" name="email" placeholder="Email">
+                  </div>
+                </div>
+                <textarea class="contact__textarea" name="message" rows="6" placeholder="Message"></textarea>
+                <div class="contact__holder-btn">
+                  <button type="submit" class="contact__btn-submit">Send</button>
+                </div>
+              </form>
               <div class="contact__info">
                 <div class="contact__info-title">Get in touch with us</div>
                 <div class="contact__info-text">
@@ -205,16 +226,6 @@
                 <a href="tel:+XXXXXXXXXXXX" class="contact__phone">+XX-XXXX-XXXX-XX</a>
                 <a href="mailto:info@mail.com" class="contact__email">info@mail.com</a>
               </div>
-              <form action="#" method="post" name="contact-form" class="contact__form">
-                <div class="contact__row">
-                  <input type="text" class="contact__field" name="name" placeholder="Name">
-                  <input type="email" class="contact__field" name="email" placeholder="Email">
-                </div>
-                <textarea class="contact__textarea" name="message" rows="6" placeholder="Message"></textarea>
-                <div class="contact__holder-btn">
-                  <button type="submit" class="contact__btn-submit">Send</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -223,6 +234,7 @@
     </div>
     <script src="/author/components/jquery/dist/jquery.min.js"></script>
     <script src="/author/components/slick-carousel/slick/slick.min.js"></script>
+    <script src="/author/components/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="/author/js/app.js"></script>
 
   </body>
