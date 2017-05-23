@@ -466,6 +466,11 @@ body {
       .portfolio__btn-block.layout a:hover {
         background-color: #ff6e40;
         color: #fff; }
+    .portfolio__btn-block.yokngalam a {
+      color: #01a2a6; }
+      .portfolio__btn-block.yokngalam a:hover {
+        background-color: #01a2a6;
+        color: #fff; }
   .portfolio__item {
     display: inline-block;
     max-width: 380px;
@@ -496,6 +501,8 @@ body {
     background-color: rgba(73, 203, 205, 0.5); }
     .portfolio__overlay.layout {
       background-color: rgba(255, 110, 64, 0.5); }
+    .portfolio__overlay.yokngalam {
+      background-color: rgba(1, 162, 166, 0.5); }
   .portfolio__item-name {
     border: 2px solid #49cbcd;
     height: 70px;
