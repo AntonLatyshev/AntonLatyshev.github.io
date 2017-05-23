@@ -486,6 +486,11 @@ body {
       .portfolio__btn-block.design a:hover {
         background-color: #ebb240;
         color: #fff; }
+    .portfolio__btn-block.carckeys a {
+      color: #f6d334; }
+      .portfolio__btn-block.carckeys a:hover {
+        background-color: #f6d334;
+        color: #fff; }
   .portfolio__item {
     display: inline-block;
     max-width: 380px;
@@ -526,6 +531,8 @@ body {
       background: none; }
     .portfolio__overlay.design {
       background: none; }
+    .portfolio__overlay.carckeys {
+      background: none; }
   .portfolio__item-name {
     border: 2px solid #49cbcd;
     height: 70px;
@@ -555,5 +562,8 @@ body {
     .portfolio__item-name.design {
       color: #ebb240;
       border-color: #ebb240; }
+    .portfolio__item-name.carckeys {
+      color: #f6d334;
+      border-color: #f6d334; }
 
 /*# sourceMappingURL=index.css.map */
