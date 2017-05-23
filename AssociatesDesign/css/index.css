@@ -1,0 +1,1209 @@
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+.header-social, #wrapper #header .info-box .nav .button-menu ul, #wrapper #main .projects-box .projects-left .projects-navigation nav ul, #wrapper #main .projects-box .projects-left .project .project-info ul, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box ul, #wrapper #main .projects-box .projects-right .projects-timeline nav ul, #wrapper #main .projects-box .open-project .project .project-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#wrapper {
+  font: 12px/12px "Roboto Condensed", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto; }
+  #wrapper #header {
+    background: #f5f6ee;
+    overflow: hidden; }
+    #wrapper #header .header-holder {
+      float: left;
+      overflow: hidden;
+      padding-left: 180px; }
+      #wrapper #header .header-holder .header-logo {
+        padding-top: 50px;
+        margin-right: 80px;
+        float: left; }
+        #wrapper #header .header-holder .header-logo .logo {
+          display: block;
+          width: 162px;
+          height: 207px;
+          background: url("../images/logo.png");
+          margin-bottom: 5px; }
+          #wrapper #header .header-holder .header-logo .logo a {
+            display: block;
+            height: 100%; }
+        #wrapper #header .header-holder .header-logo .logo-name {
+          display: block;
+          font-size: 18px;
+          line-height: 18px;
+          text-transform: uppercase;
+          max-width: 110px;
+          margin-bottom: 55px; }
+        #wrapper #header .header-holder .header-logo .header-social, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul {
+          overflow: hidden; }
+          #wrapper #header .header-holder .header-logo .header-social li, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul li, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul li, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul li, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul li, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul li, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul li, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul li, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul li, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul li {
+            float: left;
+            margin-left: 15px; }
+            #wrapper #header .header-holder .header-logo .header-social li a, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul li a, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul li a, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul li a, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul li a, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul li a, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul li a, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul li a, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul li a, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul li a {
+              display: block;
+              height: 100%; }
+          #wrapper #header .header-holder .header-logo .header-social .header-facebook, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul .header-facebook, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul .header-facebook, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul .header-facebook, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul .header-facebook, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul .header-facebook, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul .header-facebook, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul .header-facebook, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul .header-facebook, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul .header-facebook {
+            display: block;
+            width: 10px;
+            height: 22px;
+            background: url("../images/header_facebook.png"); }
+          #wrapper #header .header-holder .header-logo .header-social .header-twitter, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul .header-twitter, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul .header-twitter, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul .header-twitter, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul .header-twitter, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul .header-twitter, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul .header-twitter, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul .header-twitter, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul .header-twitter, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul .header-twitter {
+            display: block;
+            width: 26px;
+            height: 21px;
+            background: url("../images/header_twitter.png"); }
+          #wrapper #header .header-holder .header-logo .header-social .header-linkedin, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul .header-linkedin, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul .header-linkedin, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul .header-linkedin, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul .header-linkedin, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul .header-linkedin, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul .header-linkedin, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul .header-linkedin, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul .header-linkedin, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul .header-linkedin {
+            display: block;
+            width: 24px;
+            height: 23px;
+            background: url("../images/header_linkedin.png"); }
+          #wrapper #header .header-holder .header-logo .header-social .header-google, #wrapper #header .header-holder .header-logo .info-box .nav .button-menu ul .header-google, #wrapper #header .info-box .nav .button-menu .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .projects-navigation nav ul .header-google, #wrapper #main .projects-box .projects-left .projects-navigation nav #header .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .projects-left .project .project-info ul .header-google, #wrapper #main .projects-box .projects-left .project .project-info #header .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul .header-google, #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box #header .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .fiji .project-img .info-box ul .header-google, #wrapper #main .projects-box .projects-right .fiji .project-img .info-box #header .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .projects-right .projects-timeline nav ul .header-google, #wrapper #main .projects-box .projects-right .projects-timeline nav #header .header-holder .header-logo ul .header-google, #wrapper #header .header-holder .header-logo #main .projects-box .open-project .project .project-info ul .header-google, #wrapper #main .projects-box .open-project .project .project-info #header .header-holder .header-logo ul .header-google {
+            display: block;
+            width: 19px;
+            height: 19px;
+            background: url("../images/header_google.png");
+            margin-top: 4px; }
+      #wrapper #header .header-holder .header-image {
+        float: right; }
+        #wrapper #header .header-holder .header-image img {
+          display: block; }
+    #wrapper #header .info-box {
+      float: right;
+      width: 465px;
+      height: 500px;
+      box-sizing: border-box;
+      position: relative;
+      padding: 50px 55px;
+      background: #7acec3; }
+      #wrapper #header .info-box .nav {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        #wrapper #header .info-box .nav .button-menu {
+          border: 2px solid #fff;
+          width: 120px;
+          height: 120px;
+          box-sizing: border-box; }
+          #wrapper #header .info-box .nav .button-menu ul {
+            display: none;
+            background: #f8c255;
+            height: 121px;
+            line-height: 121px;
+            box-sizing: border-box;
+            padding-left: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 710px;
+            overflow: hidden; }
+            #wrapper #header .info-box .nav .button-menu ul li {
+              float: left; }
+              #wrapper #header .info-box .nav .button-menu ul li a {
+                font-size: 14px;
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                padding: 0 30px; }
+            #wrapper #header .info-box .nav .button-menu ul :hover a {
+              color: #7acec3; }
+      #wrapper #header .info-box .address {
+        display: block;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-style: normal;
+        color: #fff;
+        position: absolute;
+        bottom: 170px; }
+        #wrapper #header .info-box .address span {
+          display: block; }
+      #wrapper #header .info-box .contact {
+        display: block;
+        position: absolute;
+        left: 135px;
+        bottom: 100px;
+        line-height: 16px; }
+        #wrapper #header .info-box .contact a {
+          display: block;
+          color: #fff;
+          text-decoration: none; }
+        #wrapper #header .info-box .contact :hover {
+          text-decoration: underline; }
+    #wrapper #header .info-box::before {
+      content: " ";
+      display: block;
+      width: 1px;
+      height: 1000px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+      -webkit-transform: rotate(42.8deg);
+      transform: rotate(42.8deg); }
+  #wrapper #main .projects-box {
+    overflow: hidden;
+    position: relative; }
+    #wrapper #main .projects-box .projects-left {
+      float: left;
+      max-width: 1035px; }
+      #wrapper #main .projects-box .projects-left .projects-navigation {
+        float: left;
+        overflow: hidden;
+        width: 465px;
+        height: 500px;
+        box-sizing: border-box;
+        position: relative;
+        background: #ebb240; }
+        #wrapper #main .projects-box .projects-left .projects-navigation nav ul {
+          max-width: 105px;
+          position: absolute;
+          left: 130px;
+          top: 170px; }
+          #wrapper #main .projects-box .projects-left .projects-navigation nav ul li {
+            margin-bottom: 5px;
+            display: inline-block; }
+            #wrapper #main .projects-box .projects-left .projects-navigation nav ul li a {
+              display: block;
+              padding-left: 30px;
+              font-size: 13px;
+              position: relative;
+              color: #fff;
+              text-decoration: none; }
+            #wrapper #main .projects-box .projects-left .projects-navigation nav ul li a::before {
+              content: " ";
+              display: none;
+              width: 19px;
+              height: 15px;
+              background: url("../images/arrow_hover.png");
+              position: absolute;
+              left: 0;
+              top: -2px; }
+          #wrapper #main .projects-box .projects-left .projects-navigation nav ul li:hover a::before {
+            display: block; }
+          #wrapper #main .projects-box .projects-left .projects-navigation nav ul li:hover a {
+            color: #000; }
+        #wrapper #main .projects-box .projects-left .projects-navigation .box-name {
+          display: block;
+          color: #fff;
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 48px;
+          position: absolute;
+          right: 50px;
+          bottom: 160px; }
+      #wrapper #main .projects-box .projects-left .projects-navigation::before {
+        content: " ";
+        display: block;
+        width: 1px;
+        height: 1000px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: rotate(42.8deg);
+        transform: rotate(42.8deg); }
+      #wrapper #main .projects-box .projects-left .project {
+        overflow: hidden;
+        width: 570px;
+        box-sizing: border-box;
+        position: relative; }
+        #wrapper #main .projects-box .projects-left .project .project-info {
+          float: left;
+          margin-top: 75px; }
+          #wrapper #main .projects-box .projects-left .project .project-info .project-name {
+            display: block;
+            font-size: 24px;
+            font-weight: 200;
+            line-height: 24px;
+            margin-bottom: 20px; }
+          #wrapper #main .projects-box .projects-left .project .project-info ul {
+            margin-bottom: 70px; }
+            #wrapper #main .projects-box .projects-left .project .project-info ul li span {
+              display: inline-block;
+              font-weight: 800; }
+          #wrapper #main .projects-box .projects-left .project .project-info a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 18px;
+            padding-left: 35px;
+            margin-bottom: 110px; }
+          #wrapper #main .projects-box .projects-left .project .project-info a::before {
+            content: " ";
+            display: block;
+            width: 19px;
+            height: 15px;
+            background: url("../images/arrow_view.png");
+            position: absolute;
+            top: 2px;
+            left: 2px; }
+          #wrapper #main .projects-box .projects-left .project .project-info a:hover {
+            color: #ebb240; }
+          #wrapper #main .projects-box .projects-left .project .project-info .project-like {
+            width: 24px;
+            margin: 0 auto; }
+            #wrapper #main .projects-box .projects-left .project .project-info .project-like .like {
+              font-size: 11px;
+              display: block;
+              color: #ff0000;
+              position: relative;
+              padding: 25px 0 0;
+              margin-bottom: 0; }
+            #wrapper #main .projects-box .projects-left .project .project-info .project-like .like::before {
+              content: " ";
+              display: block;
+              width: 24px;
+              height: 21px;
+              background: url("../images/like.png");
+              position: absolute;
+              top: 0;
+              left: 0; }
+        #wrapper #main .projects-box .projects-left .project .project-img {
+          float: right;
+          width: 248px;
+          height: 500px; }
+          #wrapper #main .projects-box .projects-left .project .project-img img {
+            display: block; }
+      #wrapper #main .projects-box .projects-left .louis {
+        max-width: 300px;
+        padding: 0;
+        float: left; }
+        #wrapper #main .projects-box .projects-left .louis .project-img {
+          background: #708291;
+          display: block;
+          width: 300px;
+          height: 465px;
+          position: relative; }
+          #wrapper #main .projects-box .projects-left .louis .project-img .project-info {
+            margin: 0;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            z-index: 200; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info .project-name {
+              color: #fff; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info ul {
+              margin-bottom: 35px; }
+              #wrapper #main .projects-box .projects-left .louis .project-img .project-info ul li {
+                color: #fff; }
+                #wrapper #main .projects-box .projects-left .louis .project-img .project-info ul li span {
+                  color: #fff; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info a {
+              color: #fff;
+              margin-bottom: 30px; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info a:hover {
+              color: #ebb240; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info .project-like .like {
+              color: #fe7c7c; }
+            #wrapper #main .projects-box .projects-left .louis .project-img .project-info .project-like .like::before {
+              background: url("../images/like_white.png"); }
+      #wrapper #main .projects-box .projects-left .armchairs {
+        overflow: hidden;
+        width: 735px;
+        height: 465px;
+        padding-left: 0; }
+        #wrapper #main .projects-box .projects-left .armchairs .project-img {
+          width: 100%;
+          height: 100%;
+          float: none;
+          position: relative; }
+          #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info {
+            overflow: hidden;
+            margin: 0;
+            position: absolute;
+            top: 90px;
+            right: 70px; }
+            #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info .info-box {
+              float: left;
+              margin-right: 35px; }
+              #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info .info-box ul {
+                margin-bottom: 0; }
+            #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info .view-box {
+              float: right; }
+              #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info .view-box a {
+                margin-bottom: 25px; }
+              #wrapper #main .projects-box .projects-left .armchairs .project-img .project-info .view-box .like {
+                margin-bottom: 0; }
+      #wrapper #main .projects-box .projects-left .sesann {
+        height: 300px;
+        width: 735px;
+        padding-left: 0;
+        float: left; }
+        #wrapper #main .projects-box .projects-left .sesann .project-img {
+          float: none;
+          width: 100%;
+          height: 300px;
+          position: relative; }
+          #wrapper #main .projects-box .projects-left .sesann .project-img .project-info {
+            margin-top: 0;
+            position: absolute;
+            bottom: 15px;
+            right: 165px;
+            overflow: hidden; }
+            #wrapper #main .projects-box .projects-left .sesann .project-img .project-info .info-box {
+              float: left;
+              margin-right: 50px; }
+              #wrapper #main .projects-box .projects-left .sesann .project-img .project-info .info-box ul {
+                margin-bottom: 0; }
+            #wrapper #main .projects-box .projects-left .sesann .project-img .project-info .view-box {
+              margin-top: 40px;
+              overflow: hidden; }
+              #wrapper #main .projects-box .projects-left .sesann .project-img .project-info .view-box > a {
+                float: left;
+                margin-bottom: 0;
+                margin-right: 50px; }
+              #wrapper #main .projects-box .projects-left .sesann .project-img .project-info .view-box .project-like {
+                float: right; }
+      #wrapper #main .projects-box .projects-left .alessi {
+        height: 300px;
+        width: 300px;
+        padding-left: 0; }
+        #wrapper #main .projects-box .projects-left .alessi .project-img {
+          width: 300px;
+          height: 300px;
+          position: relative; }
+          #wrapper #main .projects-box .projects-left .alessi .project-img .project-info {
+            margin-top: 0;
+            position: absolute;
+            top: 80px;
+            right: 20px; }
+            #wrapper #main .projects-box .projects-left .alessi .project-img .project-info ul {
+              margin-bottom: 35px; }
+            #wrapper #main .projects-box .projects-left .alessi .project-img .project-info > a {
+              margin-bottom: 25px;
+              margin-left: -25px; }
+    #wrapper #main .projects-box .projects-right {
+      float: right;
+      max-width: 465px; }
+      #wrapper #main .projects-box .projects-right .potter .project-img {
+        position: relative; }
+        #wrapper #main .projects-box .projects-right .potter .project-img img {
+          display: block; }
+        #wrapper #main .projects-box .projects-right .potter .project-img .project-info {
+          max-width: 150px;
+          position: absolute;
+          top: 35px;
+          left: 40px; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-name {
+            display: block;
+            font-size: 24px;
+            font-weight: 200;
+            line-height: 24px;
+            margin-bottom: 20px; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-text span em {
+            font-style: normal;
+            font-weight: 600; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-text p {
+            margin: 0 0 15px; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info > a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 18px;
+            padding-left: 35px;
+            margin-bottom: 20px; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info > a::before {
+            content: " ";
+            display: block;
+            width: 19px;
+            height: 15px;
+            background: url("../images/arrow_view.png");
+            position: absolute;
+            top: 2px;
+            left: 2px; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info > a:hover {
+            color: #ebb240; }
+          #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-like {
+            width: 24px;
+            margin: 0 auto; }
+            #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-like .like {
+              text-decoration: none;
+              font-size: 11px;
+              display: block;
+              color: #ff0000;
+              position: relative;
+              padding: 25px 0 0;
+              margin-bottom: 0; }
+            #wrapper #main .projects-box .projects-right .potter .project-img .project-info .project-like .like::before {
+              content: " ";
+              display: block;
+              width: 24px;
+              height: 21px;
+              background: url("../images/like.png");
+              position: absolute;
+              top: 0;
+              left: 0; }
+      #wrapper #main .projects-box .projects-right .tabano .project-img {
+        position: relative; }
+        #wrapper #main .projects-box .projects-right .tabano .project-img img {
+          display: block; }
+        #wrapper #main .projects-box .projects-right .tabano .project-img .project-info {
+          position: absolute;
+          bottom: 45px;
+          left: 60px;
+          overflow: hidden;
+          max-width: 100%; }
+          #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box {
+            float: left;
+            margin-right: 20px; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box .project-name {
+              display: block;
+              font-size: 24px;
+              font-weight: 200;
+              line-height: 24px;
+              margin-bottom: 20px; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .info-box ul li span {
+              font-weight: 600; }
+          #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box {
+            margin-top: 40px;
+            overflow: hidden; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box > a {
+              float: left;
+              display: block;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: #000;
+              position: relative;
+              font-size: 18px;
+              font-weight: 200;
+              line-height: 18px;
+              padding-left: 35px;
+              margin-right: 15px; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box > a::before {
+              content: " ";
+              display: block;
+              width: 19px;
+              height: 15px;
+              background: url("../images/arrow_view.png");
+              position: absolute;
+              top: 2px;
+              left: 2px; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box > a:hover {
+              color: #ebb240; }
+            #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box .project-like {
+              float: right;
+              width: 24px;
+              margin: 0 auto; }
+              #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box .project-like .like {
+                text-decoration: none;
+                font-size: 11px;
+                display: block;
+                color: #ff0000;
+                position: relative;
+                padding: 25px 0 0;
+                margin-bottom: 0; }
+              #wrapper #main .projects-box .projects-right .tabano .project-img .project-info .view-box .project-like .like::before {
+                content: " ";
+                display: block;
+                width: 24px;
+                height: 21px;
+                background: url("../images/like.png");
+                position: absolute;
+                top: 0;
+                left: 0; }
+      #wrapper #main .projects-box .projects-right .fiji .project-img {
+        position: relative; }
+        #wrapper #main .projects-box .projects-right .fiji .project-img img {
+          display: block; }
+        #wrapper #main .projects-box .projects-right .fiji .project-img .info-box {
+          position: absolute;
+          top: 45px;
+          right: 70px; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box .project-name {
+            display: block;
+            font-size: 24px;
+            font-weight: 200;
+            line-height: 24px;
+            margin-bottom: 20px; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box ul {
+            margin-bottom: 25px; }
+            #wrapper #main .projects-box .projects-right .fiji .project-img .info-box ul li span {
+              font-weight: 600; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box > a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 18px;
+            padding-left: 35px;
+            margin-bottom: 20px; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box > a::before {
+            content: " ";
+            display: block;
+            width: 19px;
+            height: 15px;
+            background: url("../images/arrow_view.png");
+            position: absolute;
+            top: 2px;
+            left: 2px; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box > a:hover {
+            color: #ebb240; }
+          #wrapper #main .projects-box .projects-right .fiji .project-img .info-box .project-like {
+            width: 24px;
+            margin: 0 auto; }
+            #wrapper #main .projects-box .projects-right .fiji .project-img .info-box .project-like .like {
+              text-decoration: none;
+              font-size: 11px;
+              display: block;
+              color: #ff0000;
+              position: relative;
+              padding: 25px 0 0;
+              margin-bottom: 0; }
+            #wrapper #main .projects-box .projects-right .fiji .project-img .info-box .project-like .like::before {
+              content: " ";
+              display: block;
+              width: 24px;
+              height: 21px;
+              background: url("../images/like.png");
+              position: absolute;
+              top: 0;
+              left: 0; }
+      #wrapper #main .projects-box .projects-right .projects-timeline {
+        float: left;
+        overflow: hidden;
+        width: 465px;
+        height: 300px;
+        box-sizing: border-box;
+        position: relative;
+        background: #ebb240; }
+        #wrapper #main .projects-box .projects-right .projects-timeline nav {
+          position: absolute;
+          left: 60px;
+          top: 60px; }
+          #wrapper #main .projects-box .projects-right .projects-timeline nav .nav-name {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding-left: 30px; }
+          #wrapper #main .projects-box .projects-right .projects-timeline nav ul {
+            max-width: 105px; }
+            #wrapper #main .projects-box .projects-right .projects-timeline nav ul li {
+              margin-bottom: 5px;
+              display: inline-block; }
+              #wrapper #main .projects-box .projects-right .projects-timeline nav ul li a {
+                display: block;
+                padding-left: 30px;
+                font-size: 13px;
+                position: relative;
+                color: #fff;
+                text-decoration: none; }
+              #wrapper #main .projects-box .projects-right .projects-timeline nav ul li a::before {
+                content: " ";
+                display: none;
+                width: 19px;
+                height: 15px;
+                background: url("../images/arrow_hover.png");
+                position: absolute;
+                left: 0;
+                top: -2px; }
+            #wrapper #main .projects-box .projects-right .projects-timeline nav ul li:hover a::before {
+              display: block; }
+            #wrapper #main .projects-box .projects-right .projects-timeline nav ul li:hover a {
+              color: #000; }
+      #wrapper #main .projects-box .projects-right .projects-timeline::before {
+        content: " ";
+        display: block;
+        width: 1px;
+        height: 1000px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: rotate(40deg);
+        transform: rotate(40deg); }
+    #wrapper #main .projects-box .open-project {
+      display: none;
+      background: #fff;
+      padding: 230px 0;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999; }
+      #wrapper #main .projects-box .open-project .project {
+        max-width: 980px;
+        margin: 0 auto;
+        position: relative; }
+        #wrapper #main .projects-box .open-project .project .button-close-fondue,
+        #wrapper #main .projects-box .open-project .project .button-close-potter,
+        #wrapper #main .projects-box .open-project .project .button-close-louis,
+        #wrapper #main .projects-box .open-project .project .button-close-armchairs,
+        #wrapper #main .projects-box .open-project .project .button-close-tabano,
+        #wrapper #main .projects-box .open-project .project .button-close-fiji,
+        #wrapper #main .projects-box .open-project .project .button-close-sesann,
+        #wrapper #main .projects-box .open-project .project .button-close-alessi {
+          cursor: pointer;
+          width: 100px;
+          height: 100px;
+          border: 2px solid #000;
+          position: absolute;
+          background: url("../images/close.png") no-repeat center;
+          top: -150px;
+          right: -100px; }
+        #wrapper #main .projects-box .open-project .project .project-info {
+          float: left;
+          margin-top: 200px;
+          max-width: 545px; }
+          #wrapper #main .projects-box .open-project .project .project-info .project-name {
+            display: block;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 200;
+            margin-bottom: 12px; }
+          #wrapper #main .projects-box .open-project .project .project-info ul {
+            overflow: hidden; }
+            #wrapper #main .projects-box .open-project .project .project-info ul li {
+              font-size: 14px;
+              line-height: 16px; }
+              #wrapper #main .projects-box .open-project .project .project-info ul li span {
+                font-weight: 600; }
+          #wrapper #main .projects-box .open-project .project .project-info .project-text {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 60px; }
+          #wrapper #main .projects-box .open-project .project .project-info .project-slider {
+            max-width: 250px;
+            margin: 0 auto 60px; }
+          #wrapper #main .projects-box .open-project .project .project-info .project-social {
+            overflow: hidden;
+            max-width: 170px;
+            margin: 0 auto 60px; }
+            #wrapper #main .projects-box .open-project .project .project-info .project-social li {
+              float: left;
+              margin-left: 20px; }
+              #wrapper #main .projects-box .open-project .project .project-info .project-social li a {
+                display: block;
+                height: 100%; }
+            #wrapper #main .projects-box .open-project .project .project-info .project-social .header-facebook {
+              width: 11px;
+              height: 22px;
+              background: url("../images/facebook.png"); }
+            #wrapper #main .projects-box .open-project .project .project-info .project-social .header-twitter {
+              width: 25px;
+              height: 21px;
+              background: url("../images/twitter.png"); }
+            #wrapper #main .projects-box .open-project .project .project-info .project-social .header-google {
+              width: 21px;
+              height: 21px;
+              background: url("../images/google.png"); }
+            #wrapper #main .projects-box .open-project .project .project-info .project-social .header-link {
+              width: 26px;
+              height: 20px;
+              background: url("../images/link.png"); }
+        #wrapper #main .projects-box .open-project .project .project-img {
+          float: right; }
+    #wrapper #main .projects-box .open-project.active {
+      display: block; }
+
+.cmn-toggle-switch {
+  float: right;
+  position: absolute;
+  z-index: 500;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 40px;
+  height: 21px;
+  font-size: 0;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  cursor: pointer; }
+  .cmn-toggle-switch .hamburger {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #fff; }
+
+.cmn-toggle-switch:focus {
+  outline: none; }
+
+.cmn-toggle-switch .hamburger::before,
+.cmn-toggle-switch .hamburger::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: ""; }
+
+.cmn-toggle-switch .hamburger::before {
+  top: -9px; }
+
+.cmn-toggle-switch .hamburger::after {
+  bottom: -9px; }
+
+.cmn-toggle-switch__htx .hamburger::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform; }
+
+.cmn-toggle-switch__htx .hamburger::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform; }
+
+.menu-button .cmn-toggle-switch__htx .hamburger {
+  background: none;
+  display: none; }
+
+.menu-button .cmn-toggle-switch__htx .hamburger::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-button .cmn-toggle-switch__htx .hamburger::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.cmn-toggle-switch__htx.active .hamburger {
+  background: none; }
+
+.cmn-toggle-switch__htx.active .hamburger::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.cmn-toggle-switch__htx.active .hamburger::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/*# sourceMappingURL=index.css.map */
