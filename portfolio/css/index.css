@@ -379,13 +379,15 @@ template {
   display: block;
   clear: both; }
 
-html {
-  height: 100%; }
-
 body {
   height: 100%;
   font-family: sans-serif;
-  margin: 0; }
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute; }
 
 * {
   box-sizing: border-box; }
@@ -393,12 +395,10 @@ body {
     box-sizing: border-box; }
 
 .wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
   padding: 50px 0 0;
   height: 100%;
-  background-image: url(../data/bg.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../data/bg1.jpg);
+  background-position: center;
   background-size: cover;
   position: relative; }
   .wrapper__overlay {
@@ -406,26 +406,26 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5); }
+    right: 0; }
 
 .portfolio {
   max-width: 1180px;
   border-radius: 10px;
   margin: 0 auto;
   padding: 50px 0;
-  font-family: 'Barrio', cursive;
-  background-color: #f5f5f5;
+  font-family: 'Gloria Hallelujah', cursive;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5); }
   .portfolio__title {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 56px;
+    line-height: 60px;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     font-weight: 900;
     text-align: center;
-    margin: 0 0 20px; }
+    margin: 0 0 30px;
+    text-shadow: 2px 2px 2px #000; }
   .portfolio__list {
     text-align: center; }
   .portfolio__hover {
@@ -454,53 +454,9 @@ body {
       background-color: #fff;
       font-size: 14px;
       font-weight: 600;
-      color: #49cbcd;
       -webkit-transition: .3s;
       transition: .3s;
       border-radius: 10px; }
-      .portfolio__btn-block a:hover {
-        background-color: #49cbcd;
-        color: #fff; }
-    .portfolio__btn-block.layout a {
-      color: #ff6e40; }
-      .portfolio__btn-block.layout a:hover {
-        background-color: #ff6e40;
-        color: #fff; }
-    .portfolio__btn-block.yokngalam a {
-      color: #01a2a6; }
-      .portfolio__btn-block.yokngalam a:hover {
-        background-color: #01a2a6;
-        color: #fff; }
-    .portfolio__btn-block.tanatos a {
-      color: #f7600e; }
-      .portfolio__btn-block.tanatos a:hover {
-        background-color: #f7600e;
-        color: #fff; }
-    .portfolio__btn-block.modus a {
-      color: #e8645a; }
-      .portfolio__btn-block.modus a:hover {
-        background-color: #e8645a;
-        color: #fff; }
-    .portfolio__btn-block.design a {
-      color: #ebb240; }
-      .portfolio__btn-block.design a:hover {
-        background-color: #ebb240;
-        color: #fff; }
-    .portfolio__btn-block.carckeys a {
-      color: #f6d334; }
-      .portfolio__btn-block.carckeys a:hover {
-        background-color: #f6d334;
-        color: #fff; }
-  .portfolio__item {
-    display: inline-block;
-    max-width: 380px;
-    border-radius: 10px;
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-    position: relative; }
-    .portfolio__item:hover .portfolio__hover {
-      display: block; }
   .portfolio__image {
     position: relative;
     text-align: center;
@@ -512,29 +468,14 @@ body {
       max-width: 100%;
       height: auto;
       width: auto; }
-    .portfolio__image.modus {
-      background-color: #76c7c0; }
   .portfolio__overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: rgba(73, 203, 205, 0.5); }
-    .portfolio__overlay.layout {
-      background-color: rgba(255, 110, 64, 0.5); }
-    .portfolio__overlay.yokngalam {
-      background-color: rgba(1, 162, 166, 0.5); }
-    .portfolio__overlay.tanatos {
-      background: none; }
-    .portfolio__overlay.modus {
-      background: none; }
-    .portfolio__overlay.design {
-      background: none; }
-    .portfolio__overlay.carckeys {
-      background: none; }
+    right: 0; }
   .portfolio__item-name {
-    border: 2px solid #49cbcd;
+    border: 4px solid;
     height: 70px;
     background-color: #fff;
     line-height: 70px;
@@ -545,25 +486,82 @@ body {
     border-bottom-right-radius: 10px;
     right: 0;
     font-size: 18px;
-    font-weight: 600;
-    color: #49cbcd; }
-    .portfolio__item-name.layout {
-      color: #ff6e40;
-      border-color: #ff6e40; }
-    .portfolio__item-name.yokngalam {
-      color: #01a2a6;
-      border-color: #01a2a6; }
-    .portfolio__item-name.tanatos {
-      color: #f7600e;
-      border-color: #f7600e; }
-    .portfolio__item-name.modus {
-      color: #e8645a;
-      border-color: #e8645a; }
-    .portfolio__item-name.design {
-      color: #ebb240;
-      border-color: #ebb240; }
-    .portfolio__item-name.carckeys {
-      color: #f6d334;
-      border-color: #f6d334; }
+    font-weight: 600; }
+  .portfolio__item {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 380px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #000;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    .portfolio__item:hover .portfolio__hover {
+      display: block; }
+    .portfolio__item.author .portfolio__btn-block a {
+      color: #49cbcd; }
+      .portfolio__item.author .portfolio__btn-block a:hover {
+        background-color: #49cbcd;
+        color: #fff; }
+    .portfolio__item.author .portfolio__item-name {
+      border-color: #49cbcd;
+      color: #49cbcd; }
+    .portfolio__item.layout .portfolio__btn-block a {
+      color: #ff6e40; }
+      .portfolio__item.layout .portfolio__btn-block a:hover {
+        background-color: #ff6e40;
+        color: #fff; }
+    .portfolio__item.layout .portfolio__item-name {
+      border-color: #ff6e40;
+      color: #ff6e40; }
+    .portfolio__item.yokngalam .portfolio__btn-block a {
+      color: #01a2a6; }
+      .portfolio__item.yokngalam .portfolio__btn-block a:hover {
+        background-color: #01a2a6;
+        color: #fff; }
+    .portfolio__item.yokngalam .portfolio__item-name {
+      border-color: #01a2a6;
+      color: #01a2a6; }
+    .portfolio__item.tanatos .portfolio__btn-block a {
+      color: #f7600e; }
+      .portfolio__item.tanatos .portfolio__btn-block a:hover {
+        background-color: #f7600e;
+        color: #fff; }
+    .portfolio__item.tanatos .portfolio__item-name {
+      border-color: #f7600e;
+      color: #f7600e; }
+    .portfolio__item.modus .portfolio__btn-block a {
+      color: #e8645a; }
+      .portfolio__item.modus .portfolio__btn-block a:hover {
+        background-color: #e8645a;
+        color: #fff; }
+    .portfolio__item.modus .portfolio__item-name {
+      border-color: #e8645a;
+      color: #e8645a; }
+    .portfolio__item.design .portfolio__btn-block a {
+      color: #ebb240; }
+      .portfolio__item.design .portfolio__btn-block a:hover {
+        background-color: #ebb240;
+        color: #fff; }
+    .portfolio__item.design .portfolio__item-name {
+      border-color: #ebb240;
+      color: #ebb240; }
+    .portfolio__item.carkeys .portfolio__btn-block a {
+      color: #f6d334; }
+      .portfolio__item.carkeys .portfolio__btn-block a:hover {
+        background-color: #f6d334;
+        color: #fff; }
+    .portfolio__item.carkeys .portfolio__item-name {
+      border-color: #f6d334;
+      color: #f6d334; }
+    .portfolio__item.hmstore .portfolio__btn-block a {
+      color: #ee3346; }
+      .portfolio__item.hmstore .portfolio__btn-block a:hover {
+        background-color: #ee3346;
+        color: #fff; }
+    .portfolio__item.hmstore .portfolio__item-name {
+      border-color: #ee3346;
+      color: #ee3346; }
 
 /*# sourceMappingURL=index.css.map */
