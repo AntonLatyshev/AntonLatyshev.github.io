@@ -382,12 +382,7 @@ template {
 body {
   height: 100%;
   font-family: sans-serif;
-  margin: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: absolute; }
+  margin: 0; }
 
 * {
   box-sizing: border-box; }
@@ -395,7 +390,7 @@ body {
     box-sizing: border-box; }
 
 .wrapper {
-  padding: 50px 0 0;
+  padding: 100px 0;
   height: 100%;
   background-image: url(../data/bg1.jpg);
   background-position: center;
@@ -563,5 +558,13 @@ body {
     .portfolio__item.hmstore .portfolio__item-name {
       border-color: #ee3346;
       color: #ee3346; }
+    .portfolio__item.myportfolio .portfolio__btn-block a {
+      color: #129725; }
+      .portfolio__item.myportfolio .portfolio__btn-block a:hover {
+        background-color: #129725;
+        color: #fff; }
+    .portfolio__item.myportfolio .portfolio__item-name {
+      border-color: #129725;
+      color: #129725; }
 
 /*# sourceMappingURL=index.css.map */
