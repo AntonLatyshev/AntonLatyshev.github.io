@@ -56,6 +56,14 @@
 
 	var _team2 = _interopRequireDefault(_team);
 
+	var _header = __webpack_require__(5);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _anchor = __webpack_require__(6);
+
+	var _anchor2 = _interopRequireDefault(_anchor);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _markupMenu.markupMenu)(window.document);
@@ -64,6 +72,8 @@
 	$(function () {
 	  (0, _video2.default)();
 	  (0, _team2.default)();
+	  (0, _header2.default)();
+	  (0, _anchor2.default)();
 	});
 
 /***/ }),
@@ -185,6 +195,48 @@
 	  });
 	};
 	exports.default = team;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var header = function header() {
+
+	  $(window).scroll(function () {
+	    $('.header').removeClass('sticky');
+	    if ($(this).scrollTop() > 30) {
+	      $('.header').addClass('sticky');
+	    } else {
+	      $('.header').removeClass('sticky');
+	    }
+	  });
+	};
+	exports.default = header;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var anchor = function anchor() {
+
+		$(".nav.navbar-nav").on("click", "a", function (event) {
+			event.preventDefault();
+			var id = $(this).attr('href'),
+			    top = $(id).offset().top;
+			$('body,html').animate({ scrollTop: top }, 1500);
+		});
+	};
+	exports.default = anchor;
 
 /***/ })
 /******/ ]);
